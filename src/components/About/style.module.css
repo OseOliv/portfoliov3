@@ -92,7 +92,7 @@
 .btnCv::before {
   content: "";
   position: absolute;
-  inset: 0;
+  inset: inherit;
   left: -4px;
   top: -1px;
   margin: auto;
