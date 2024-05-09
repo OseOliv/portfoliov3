@@ -5,6 +5,7 @@ const Project = () => {
     <>
       <div className="page">
         <h1>Meus Projetos</h1>
+        <p>Soon :D</p>
       </div>
     </>
   );
