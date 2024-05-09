@@ -85,6 +85,10 @@
   text-decoration: none;
 }
 
+.btnCvLink {
+  text-decoration: none;
+}
+
 .btnCv::before {
   content: "";
   position: absolute;

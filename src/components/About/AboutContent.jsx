@@ -61,7 +61,7 @@ const AboutContent = () => {
           </p>
           <div className={styles.avatarContainer}>
             <img src={emptyavatar} alt="avatar" className={styles.avatar} />
-            <Link to={oseolicv} target="_blank" rel="noreferrer">
+            <Link className={styles.btnCvLink} to={oseolicv} target="_blank" rel="noreferrer">
               <span className={styles.btnCv}>CURRICULUM</span>
             </Link>
           </div>
