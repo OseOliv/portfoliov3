@@ -1,11 +1,11 @@
 import React from "react";
+import ProjectContent from "../components/Project/ProjectContent";
 
 const Project = () => {
   return (
     <>
       <div className="page">
-        <h1>MEUS PROJETOS</h1>
-        <p>Soon :D</p>
+        <ProjectContent/>
       </div>
     </>
   );
