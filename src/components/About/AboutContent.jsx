@@ -1,7 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./style.module.css";
 import bgHome from "../../assets/img/others/dev.png";
 import emptyavatar from "../../assets/img/others/emptyavatar.jpg";
+import oseolicv from "../../assets/img/others/OseOlivCurriculum.pdf";
 
 const AboutContent = () => {
   return (
@@ -35,10 +37,33 @@ const AboutContent = () => {
             de acompanhar as novidades no desenvolvimento web. Hoje, mantenho-me
             focado nos estudos das linguagens front-end e nas últimas
             tecnologias, buscando aprimorar constantemente minhas habilidades.
+            <br></br>
+            <br></br>
+            <div className={styles.skillsContainer}>
+              <p>
+                Linguagens, frameworks e bibliotecas com as quais tenho
+                experiência:
+              </p>
+              <br></br>
+              <div className={styles.skills}>
+                <span className={styles.skillsSpan}>HTML</span>
+                <span className={styles.skillsSpan}>CSS</span>
+                <span className={styles.skillsSpan}>JavaScript</span>
+                <span className={styles.skillsSpan}>TypeScript</span>
+                <span className={styles.skillsSpan}>Node.js</span>
+                <span className={styles.skillsSpan}>React.js</span>
+                <span className={styles.skillsSpan}>React Native</span>
+                <span className={styles.skillsSpan}>SASS</span>
+                <span className={styles.skillsSpan}>styled-components</span>
+                <span className={styles.skillsSpan}>Axios</span>
+              </div>
+            </div>
           </p>
           <div className={styles.avatarContainer}>
             <img src={emptyavatar} alt="avatar" className={styles.avatar} />
-            <span className={styles.btnCv}>CURRICULUM</span>
+            <Link to={oseolicv} target="_blank" rel="noreferrer">
+              <span className={styles.btnCv}>CURRICULUM</span>
+            </Link>
           </div>
         </div>
       </div>

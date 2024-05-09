@@ -82,6 +82,7 @@
   font-family: "Share Tech Mono", monospace;
   font-size: 1.2rem;
   font-weight: 600;
+  text-decoration: none;
 }
 
 .btnCv::before {
@@ -98,6 +99,7 @@
   z-index: -10;
   pointer-events: none;
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  text-decoration: none;
 }
 
 .btnCv::after {
@@ -108,6 +110,7 @@
   background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
   transform: translate3d(0, 0, 0) scale(0.95);
   filter: blur(20px);
+  text-decoration: none;
 }
 
 .btnCv:hover::after {
@@ -120,7 +123,67 @@
 
 .btnCv:active::before {
   scale: 0.7;
+  transform: scale(0.7); 
 }
+
+.skillsContainer p {
+  color: lightblue;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  max-width: 560px;
+  cursor: grab;
+}
+
+.skills span {
+  font-size: 0.95rem;
+  padding: 0.4rem 0.3rem;
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+.skillsSpan::before{
+  content: "➤";
+  color:rgb(3, 233, 244) ;
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 0.525rem;
+}
+
+.skillsSpan {
+  padding: 12.5px 30px;
+  border: 0;
+  border-radius: 100px;
+  background-color: rgb(3, 233, 244);
+  color: rgb(138, 43, 226);
+  font-weight: bold;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.skillsSpan:hover {
+  background-color: rgb(3, 233, 244);
+  box-shadow: 0 0 20px rgb(3, 233, 244, 0.3);
+  transform: scale(1.1);
+}
+
+.skillsSpan:active {
+  background-color: rgb(3, 233, 244);
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
+}
+
+/* RESPONSIVO */
 
 @media screen and (max-width: 1200px) {
   .avatar {
@@ -149,5 +212,11 @@
   .avatarContainer {
     order: -1;
   }
-  
 }
+@media screen and (max-width: 460px) {
+  .skills {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
