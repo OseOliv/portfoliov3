@@ -10,7 +10,6 @@
   height: calc(100vh - 80px);
   object-fit: cover;
   opacity: 0.05;
-
 }
 
 .overlay {
@@ -71,11 +70,19 @@
 }
 
 @media screen and (max-width: 530px) {
+  .container {
+    padding: 0 7%;
+    
+  }
   .name {
     font-size: 4rem;
   }
   .textOne {
     margin-bottom: 2rem;
+  }
+
+  .textQuote{
+    margin-bottom: 0;
   }
 }
 @media screen and (max-width: 430px) {

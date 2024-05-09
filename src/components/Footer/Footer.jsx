@@ -10,13 +10,13 @@ const Footer = () => {
     <>
       <footer>
         <div className={styles.footer}>
-          <Link to="https://www.linkedin.com/in/oseoliveira/" target="_blank">
+          <Link to="https://www.instagram.com/ozzyoliveira/ " target="_blank">
             <img src={instLogo} alt="instagram" />
           </Link>
           <Link to="https://github.com/OseOliv" target="_blank">
             <img src={githLogo} alt="github" />
           </Link>
-          <Link to="https://www.instagram.com/ozzyoliveira/" target="_blank">
+          <Link to="https://www.linkedin.com/in/oseoliveira/" target="_blank">
             <img src={linkdLogo} alt="linkedin" />
           </Link>
         </div>
