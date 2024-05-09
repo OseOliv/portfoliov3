@@ -92,7 +92,7 @@
 .btnCv::before {
   content: "";
   position: absolute;
-  inset: inherit;
+  inset: 0;
   left: -4px;
   top: -1px;
   margin: auto;
@@ -110,7 +110,7 @@
   content: "";
   z-index: -1;
   position: absolute;
-  inset: 0;
+  inset: inherit;
   background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
   transform: translate3d(0, 0, 0) scale(0.95);
   filter: blur(20px);
