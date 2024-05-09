@@ -25,7 +25,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
   margin: 0;
   box-sizing: border-box;
   position: relative;
@@ -33,8 +33,7 @@
 
 .pageTitle {
   margin-top: 1rem;
-  margin-bottom: 2rem;
-  padding: 2rem 20%;
+    padding: 2rem 20%;
 }
 
 .pageTitle span {
@@ -50,7 +49,7 @@
   height: 250px;
   border: 2px solid rgb(138, 43, 226, 0.3);
   border-radius: 0.5rem;
-  margin: 2rem auto;
+  margin: 1rem auto;
   background-color: rgba(3, 233, 244, 0.1);
 }
 
@@ -104,7 +103,7 @@
 }
 
 .imgCard img:hover {
-  -webkit-transform: scale(1.1) rotate(0.01deg);
+  -webkit-transform: scale(2) rotate(0.01deg);
   transform: scale(2) rotate(0.01deg);
 }
 
@@ -158,5 +157,57 @@
 
   50% {
     border-color: #6019bd;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 420px;
+    height: 450px;
+    border: 2px solid rgb(138, 43, 226, 0.3);
+    border-radius: 0.5rem;
+    margin: 2rem auto;
+    background-color: rgba(3, 233, 244, 0.1);
+  }
+}
+@media screen and (max-width: 830px) {
+  .imgCard img:hover {
+    -webkit-transform: scale(1.5) rotate(0.01deg);
+    transform: scale(1.5) rotate(0.01deg);
+  }
+}
+@media screen and (max-width: 640px) {
+  .imgCard img:hover {
+    -webkit-transform: scale(1.2) rotate(0.01deg);
+    transform: scale(1.2) rotate(0.01deg);
+  }
+}
+@media screen and (max-width: 520px) {
+  .cardTitle span {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(138, 43, 226);
+    margin-bottom: 0rem;
+  }
+
+  .cardTitle {
+    margin-bottom: 0rem;
+   
+  }
+
+  .cardContainer {
+    max-width: 320px;
+    height: 400px;
+  }
+  .imgCard img {
+    max-width: 300px;
+  }
+
+  .imgCard img:hover {
+    -webkit-transform: scale(1.1) rotate(0.01deg);
+    transform: scale(1.1) rotate(0.01deg);
   }
 }
