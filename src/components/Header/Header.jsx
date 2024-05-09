@@ -32,7 +32,7 @@ const Header = () => {
         <div className={styles.menuLinks}>
           {menuLinks.map((mlink) => (
             <NavLink key={mlink.name} to={mlink.to} className={isActive}>
-              <button className="buttonLinks">
+              <button className={styles.buttonLinks}>
                 {mlink.name}
                 </button>
             </NavLink>
