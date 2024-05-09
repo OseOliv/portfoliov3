@@ -4,7 +4,7 @@ const Project = () => {
   return (
     <>
       <div className="page">
-        <h1>Meus Projetos</h1>
+        <h1>MEUS PROJETOS</h1>
         <p>Soon :D</p>
       </div>
     </>
