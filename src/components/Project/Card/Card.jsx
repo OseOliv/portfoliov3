@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./style.module.css";
-import imgteste1 from "../../../assets/img/Project/teste-projetos1.png";
 import { Link } from "react-router-dom";
 import bgHome from "../../../assets/img/others/dev.png";
+import CardItem from "./CardItem";
 
 const Card = () => {
   return (
@@ -20,106 +20,24 @@ const Card = () => {
           <div className={styles.pageTitle}>
             <span>MEUS PROJETOS</span>
           </div>
-          <div className={styles.cardContainer}>
-            <div className={styles.imgContainer}>
-              <div className={styles.imgCard}>
-                <Link
-                  to="https://github.com/OseOliv/Exemple-Coffee-Shop-WebSite-BootStrap"
-                  target="_blanc"
-                >
-                  <img src={imgteste1} alt="teste" />
-                </Link>
-              </div>
-            </div>
+          <CardItem
+            to="https://github.com/OseOliv/Exemple-Coffee-Shop-WebSite-BootStrap"
+            imgSrc={require("../../../assets/img/project/teste-projetos1.png")}
+            title="Projeto teste"
+            description="É certamente o texto de marcador de posição mais famoso, mesmo que existam diferentes versões distinguíveis da ordem em que as palavras latinas são repetidas."
+            skills={["HTML", "JavaScript", "CSS", "React.js"]}
+          />
+        
+          
 
-            <div className={styles.cardContainerDescrption}>
-              <div className={styles.cardTitle}>
-                <span>Primeiro Projeto</span>
-              </div>
-              <div className={styles.cardDescription}>
-                <span>
-                  Descricao Projeto Descricao Projeto Descricao Projeto
-                  Descricao Descricao Descricao Descricao Descricao Descricao
-                  Descricao Descricao Descricao DescricaoDescricao Descricao
-                  Projeto Descricao Projeto
-                </span>
-              </div>
-              <div className={styles.cardSkills}>
-                <span>HTML</span>
-                <span>JavaScript</span>
-                <span>CSS</span>
-                <span>React.js</span>
-              </div>
-            </div>
-          </div>
-          <div className={styles.cardContainer}>
-            <div className={styles.imgContainer}>
-              <div className={styles.imgCard}>
-                <Link
-                  to="https://github.com/OseOliv/Exemple-Coffee-Shop-WebSite-BootStrap"
-                  target="_blanc"
-                >
-                  <img src={imgteste1} alt="teste" />
-                </Link>
-              </div>
-            </div>
-
-            <div className={styles.cardContainerDescrption}>
-              <div className={styles.cardTitle}>
-                <span>Primeiro Projeto</span>
-              </div>
-              <div className={styles.cardDescription}>
-                <span>
-                  Descricao Projeto Descricao Projeto Descricao Projeto
-                  Descricao Descricao Descricao Descricao Descricao Descricao
-                  Descricao Descricao Descricao DescricaoDescricao Descricao
-                  Projeto Descricao Projeto
-                </span>
-              </div>
-              <div className={styles.cardSkills}>
-                <span>HTML</span>
-                <span>JavaScript</span>
-                <span>CSS</span>
-                <span>React.js</span>
-              </div>
-            </div>
-          </div>
-          <div className={styles.cardContainer}>
-            <div className={styles.imgContainer}>
-              <div className={styles.imgCard}>
-                <Link
-                  to="https://github.com/OseOliv/Exemple-Coffee-Shop-WebSite-BootStrap"
-                  target="_blanc"
-                >
-                  <img src={imgteste1} alt="teste" />
-                </Link>
-              </div>
-            </div>
-
-            <div className={styles.cardContainerDescrption}>
-              <div className={styles.cardTitle}>
-                <span>Primeiro Projeto</span>
-              </div>
-              <div className={styles.cardDescription}>
-                <span>
-                  Descricao Projeto Descricao Projeto Descricao Projeto
-                  Descricao Descricao Descricao Descricao Descricao Descricao
-                  Descricao Descricao Descricao DescricaoDescricao Descricao
-                  Projeto Descricao Projeto
-                </span>
-              </div>
-              <div className={styles.cardSkills}>
-                <span>HTML</span>
-                <span>JavaScript</span>
-                <span>CSS</span>
-                <span>React.js</span>
-              </div>
-            </div>
-          </div>
-          <Link className={styles.btnProjectLink} to="https://github.com/OseOliv" target="_blanc">
-          <button className={styles.btnProject}>
-            <span className={styles.btnProjectText}>VER MAIS</span>
-          </button>
+          <Link
+            className={styles.btnProjectLink}
+            to="https://github.com/OseOliv"
+            target="_blanc"
+          >
+            <button className={styles.btnProject}>
+              <span className={styles.btnProjectSpan}>VER MAIS</span>
+            </button>
           </Link>
         </div>
       </div>
