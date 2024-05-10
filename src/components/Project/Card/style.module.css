@@ -107,58 +107,60 @@
   transform: scale(2) rotate(0.01deg);
 }
 
-.cti {
-  background-color: #6019bd;
-  padding: 10px 20px;
-  margin-top: 2rem;
-  margin-bottom: 4rem;
-  border: 3px solid transparent;
-  border-radius: 0.6em;
-  transition: 0.2s;
-  cursor: pointer;
+.btnProjectLink{
+  text-decoration: none;
 }
 
-.cti:hover {
-  background-color: transparent;
-  border: 3px solid #6019bd;
-  box-shadow: 0px 0px 27px 5px #6019bd;
-}
-
-.CTI {
-  color: #fff;
+.btnProject {
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
   font-family: "Share Tech Mono", monospace;
-  font-size: 17px;
-  font-weight: bold;
-  overflow: hidden;
-  border-right: 4px solid transparent;
+  font-size: 18px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
   white-space: nowrap;
-  margin: 0 auto;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
 }
 
-.cti:hover .CTI {
-  border-right: 4px solid #6019bd;
-  animation: letters 1s steps(22, end), cursor 0.4s step-end infinite;
+.btnProject:active,
+.btnProject:hover {
+  outline: 0;
 }
 
-@keyframes letters {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 100%;
-  }
+.btnProject span {
+  background-color: rgb(5, 6, 45);
+  padding: 8px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
 }
 
-@keyframes cursor {
-  from {
-    border-color: transparent;
-  }
-
-  50% {
-    border-color: #6019bd;
-  }
+.btnProject:hover span {
+  background: none;
 }
+
+.btnProject:active {
+  transform: scale(0.9);
+}
+
+/* RESPONSIVO */
 
 @media screen and (max-width: 992px) {
   .cardContainer {

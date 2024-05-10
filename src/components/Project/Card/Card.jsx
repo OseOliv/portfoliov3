@@ -116,10 +116,10 @@ const Card = () => {
               </div>
             </div>
           </div>
-          <Link to="https://github.com/OseOliv" target="_blanc">
-            <button className={styles.cti}>
-              <div className={styles.CTI}>VER MAIS...</div>
-            </button>
+          <Link className={styles.btnProjectLink} to="https://github.com/OseOliv" target="_blanc">
+          <button className={styles.btnProject}>
+            <span className={styles.btnProjectText}>VER MAIS</span>
+          </button>
           </Link>
         </div>
       </div>
