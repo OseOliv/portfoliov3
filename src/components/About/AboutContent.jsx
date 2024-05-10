@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./style.module.css";
 import bgHome from "../../assets/img/others/dev.png";
-import emptyavatar from "../../assets/img/others/emptyavatar.jpg";
+import avatarperfil from "../../assets/img/others/avatarperfil.jpg";
 import oseolicv from "../../assets/img/others/OseOlivCurriculum.pdf";
 
 const AboutContent = () => {
@@ -61,7 +61,7 @@ const AboutContent = () => {
             </div>
           </p>
           <div className={styles.avatarContainer}>
-            <img src={emptyavatar} alt="avatar" className={styles.avatar} />
+            <img src={avatarperfil} alt="avatar" className={styles.avatar} />
             <Link className={styles.btnCvLink} to={oseolicv} target="_blank" rel="noreferrer">
               <span className={styles.btnCv}>CURRICULUM</span>
             </Link>
