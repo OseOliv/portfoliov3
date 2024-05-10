@@ -3,6 +3,7 @@ import styles from "./style.module.css";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
+import bgHome from '../../assets/img/others/dev.png'
 
 import "react-toastify/dist/ReactToastify.css";
 
@@ -53,6 +54,9 @@ const ContactContent = () => {
 
   return (
     <>
+    <div className={styles.backgroundContainer}>
+      <div className={styles.overlay}></div>
+      <img src={bgHome} alt="background dev" className={styles.backgroundImage} />
       <div className={styles.contactContainer}>
         <div className={styles.contactTitle}>
           <span>CONTATO</span>
@@ -87,6 +91,7 @@ const ContactContent = () => {
           </button>
           <ToastContainer />
         </form>
+      </div>
       </div>
     </>
   );
