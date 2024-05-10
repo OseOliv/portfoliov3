@@ -22,13 +22,11 @@ const Card = () => {
           </div>
           <CardItem
             to="https://github.com/OseOliv/Exemple-Coffee-Shop-WebSite-BootStrap"
-            imgSrc={require("../../../assets/img/project/teste-projetos1.png")}
-            title="Projeto teste"
-            description="É certamente o texto de marcador de posição mais famoso, mesmo que existam diferentes versões distinguíveis da ordem em que as palavras latinas são repetidas."
-            skills={["HTML", "JavaScript", "CSS", "React.js"]}
+            imgSrc={require("../../../assets/img/project/coffe.png")}
+            title="Coffe Shop"
+            description="Este website de cafeteria integra frameworks e bibliotecas para criar uma experiência online envolvente e funcional. Com uma interface intuitiva, os clientes podem explorar os produtos e serviços oferecidos com facilidade, desfrutando de uma navegação suave e atraente."
+            skills={["HTML","CSS", "JavaScript", "Bootstrap"]}
           />
-        
-          
 
           <Link
             className={styles.btnProjectLink}
