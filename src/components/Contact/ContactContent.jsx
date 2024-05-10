@@ -2,10 +2,23 @@ import React from "react";
 import styles from "./style.module.css";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
 
-
+import "react-toastify/dist/ReactToastify.css";
 
 const ContactContent = () => {
+  const notify = () =>
+    toast("Mensagem enviada com sucesso !", {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+    });
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -28,8 +41,6 @@ const ContactContent = () => {
       )
       .then(
         (response) => {
-          
-          alert("Mensagem enviada!");
           setName("");
           setEmail("");
           setMessage("");
@@ -42,13 +53,9 @@ const ContactContent = () => {
 
   return (
     <>
-
-
       <div className={styles.contactContainer}>
         <div className={styles.contactTitle}>
-          <span>
-            CONTATO
-          </span>
+          <span>CONTATO</span>
         </div>
         <form className={styles.formContact} onSubmit={sendEmail}>
           <input
@@ -64,9 +71,8 @@ const ContactContent = () => {
             type="email"
             placeholder="Digite seu email"
             onChange={(e) => setEmail(e.target.value)}
-              value={email}
-              required
-
+            value={email}
+            required
           />
           <textarea
             className={styles.textareaContact}
@@ -76,7 +82,10 @@ const ContactContent = () => {
             value={message}
             required
           />
-          <button className={styles.buttonContact}>ENVIAR</button>
+          <button className={styles.buttonContact} onClick={notify}>
+            ENVIAR
+          </button>
+          <ToastContainer />
         </form>
       </div>
     </>
