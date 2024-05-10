@@ -36,6 +36,14 @@ const Card = () => {
           />
 
           <CardItem
+            to="https://github.com/OseOliv/movie-app-mobile"
+            imgSrc={require("../../../assets/img/project/movieaoo.gif")}
+            title="Cinema App"
+            description=" Aplicativo móvel  que proporciona uma experiência imersiva ao explorar sinopses, elencos completos e detalhes dos artistas que protagonizam os filmes, utilizando a API do TMDB ."
+            skills={["React Native", "JavaScript", "Axios", "Tailwind"]}
+          />
+
+          <CardItem
             to="https://github.com/OseOliv/op-memory-game"
             imgSrc={require("../../../assets/img/project/opmemory.png")}
             title="OP:Memory Game"
