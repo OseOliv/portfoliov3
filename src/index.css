@@ -3,15 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-:root {
-  --primary-color: #00a1ff;
-  --border-right: 6px;
-  --text-stroke-color: lightblue;
-  --animation-color: rgb(138, 43, 226);
-  --fs-size: 2em;
-}
-
 body {
   font-family: "Open sans", sans-serif;
   background-color: rgb(3, 7, 26);

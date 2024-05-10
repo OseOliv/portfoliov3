@@ -1,13 +1,11 @@
 import React from "react";
+import ContactContent from "../components/Contact/ContactContent";
 
 const Contact = () => {
   return (
-    <>
-      <div className="page">
-        <h1>CONTATO</h1>
-        <p>Soon :D</p>
-      </div>
-    </>
+    <div className="page">
+      <ContactContent />
+    </div>
   );
 };
 

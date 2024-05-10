@@ -1,0 +1,105 @@
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.contactTitle {
+  margin-top: 1rem;
+  padding: 2rem 20%;
+}
+
+.contactTitle span {
+  color: rgb(3, 233, 244);
+  font-size: 2.2rem;
+  font-family: "Share Tech Mono", monospace;
+}
+
+.formContact {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputContact {
+  width: 40rem;
+  padding: 10px;
+  color: rgb(178, 224, 224);
+  background-color: transparent;
+  border: 2px solid rgb(138, 43, 226);
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-family: "Share Tech Mono", monospace;
+  margin-bottom: 0.5rem;
+
+  &::placeholder {
+    color: rgb(3, 233, 244);
+  }
+  @media screen and (max-width: 756px) {
+    width: 300px;
+  }
+}
+
+.textareaContact {
+  width: 40rem;
+  height: 12rem;
+  padding: 10px;
+  color: rgb(178, 224, 224);
+  background-color: transparent;
+  border: 2px solid rgb(138, 43, 226);
+  border-radius: 5px;
+  display: flex;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+
+  &::placeholder {
+    color: rgb(3, 233, 244);
+  }
+  @media screen and (max-width: 756px) {
+    width: 300px;
+  }
+}
+
+.buttonContact {
+  border-radius: 4px;
+  background: none;
+  white-space: nowrap;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-family: "Share Tech Mono", monospace;
+  color: rgb(3, 233, 244);
+  font-size: 1.1rem;
+  outline: none;
+  border: 2px solid #03e9f4;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+
+  &:before {
+    background: rgb(138, 43, 226, 0.5);
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+    width: 102%;
+    height: 0%;
+  }
+
+  &:hover:before {
+    height: 200%;
+  }
+  &:hover {
+    z-index: 1;
+    color: #03e9f4;
+  }
+  @media screen and (max-width: 756px) {
+    width: 300px;
+  }
+}
