@@ -56,6 +56,7 @@ const AboutContent = () => {
                 <span className={styles.skillsSpan}>SASS</span>
                 <span className={styles.skillsSpan}>styled-components</span>
                 <span className={styles.skillsSpan}>Axios</span>
+                <span className={styles.skillsSpan}>Tailwind</span>
               </div>
             </div>
           </p>
