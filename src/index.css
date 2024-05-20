@@ -12,6 +12,8 @@ body {
 .page {
   width: 100%;
   min-height: calc(100vh - 180px);
+  display: flex;
+  flex-direction: column;
 }
 
 .footer {

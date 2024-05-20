@@ -1,5 +1,9 @@
 .backgroundContainer {
   position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
 }
 
 .backgroundImage {
@@ -7,7 +11,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 120px);
   object-fit: cover;
   opacity: 0.05;
 }
@@ -22,78 +26,122 @@
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
   margin: 0;
   padding: 2rem 20%;
   box-sizing: border-box;
   position: relative;
 }
 
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.welcomeContainer {
+  display: flex;
+  align-self: baseline;
+}
+
 .welcome {
   font-family: "Share Tech Mono", monospace;
   font-size: 1.5rem;
   font-weight: 100;
-  margin-top: 10rem;
   color: rgb(178, 224, 224);
 }
 
 .name {
+  display: flex;
   font-family: "Share Tech Mono", monospace;
-  font-size: 5rem;
+  font-size: 7rem;
   font-weight: 600;
   color: rgb(138, 43, 226);
+  position: relative;
+  &:after {
+    --deco-height: 0.3125em;
+    max-width: 100%;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: calc(var(--deco-height) * -0.625);
+    height: var(--deco-height);
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23a)'%3E%3Cpath d='M-17 30.5C-1 22 72-4 54 13 37.9 28.2-2.5 57.5 16 55.5s72-29 104-40' stroke='%2300FDCF' stroke-width='10'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h100v64H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    background-size: auto 100%;
+    background-repeat: round;
+    background-position: 0em;
+  }
 }
 
-.textOne {
-  font-family: "Share Tech Mono", monospace;
-  margin-top: 1.2rem;
-  margin-bottom: 5rem;
-  font-size: 1.5rem;
-}
-
-.textQuote {
-  font-family: Source Code Pro, monospace;
-  max-width: 700px;
-  margin: 0 auto;
-  color: rgba(138, 247, 234, 0.5);
-  font-size: 1.75rem;
-  font-weight: 100;
+.subtitle {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  align-self: flex-end;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 2.5rem;
+  margin-top: 1.2rem;
+  margin-left: auto;
+}
+
+.subtitle span {
+  overflow: hidden;
+  border-right: 2px solid #fff;
+  white-space: nowrap;
+  animation: typewriter 2s steps(44) 1s 1 normal both,
+    blinkTextCursor 600ms infinite;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: #fff;
+  }
+  to {
+    border-right-color: transparent;
+  }
 }
 
 @media screen and (max-width: 992px) {
   .welcome {
     margin-top: 2rem;
   }
-  .textOne {
-    margin-bottom: 4rem;
+  .subtitle {
+    padding-right: 0;
   }
 }
 
 @media screen and (max-width: 530px) {
-
   .welcome {
-    margin-top: 4rem;
+    margin-top: 0rem;
   }
   .container {
     padding: 0 7%;
-    
   }
   .name {
-    font-size: 4rem;
+    font-size: 5rem;
   }
-  .textOne {
-    margin-bottom: 2rem;
-  }
-
-  .textQuote{
-    margin-bottom: 0;
+  .subtitle {
+    font-size: 2rem;
   }
 }
+
 @media screen and (max-width: 430px) {
   .name {
-    font-size: 3rem;
+    font-size: 4.5rem;
+  }
+  .subtitle {
+    font-size: 2rem;
   }
 }
