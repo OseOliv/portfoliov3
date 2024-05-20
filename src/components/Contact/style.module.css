@@ -27,21 +27,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  justify-content: center;
   margin: 0;
-  box-sizing: border-box;
   position: relative;
 }
 
 .contactTitle {
-  margin-top: 1rem;
-  padding: 2rem 20%;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  display: flex;
+  align-self: baseline;
+  
 }
 
 .contactTitle span {
   color: rgb(3, 233, 244);
   font-size: 2.2rem;
   font-family: "Share Tech Mono", monospace;
+ 
 }
 
 .formContact {
@@ -61,7 +64,7 @@
   margin-bottom: 0.5rem;
 
   &::placeholder {
-    color: rgb(3, 233, 244, 0.5);
+    color: #fff;
   }
   @media screen and (max-width: 756px) {
     width: 300px;
@@ -82,7 +85,7 @@
   margin-bottom: 2rem;
 
   &::placeholder {
-    color: rgb(3, 233, 244, 0.5);
+    color: #fff;
   }
   @media screen and (max-width: 756px) {
     width: 300px;

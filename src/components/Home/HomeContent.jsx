@@ -13,14 +13,19 @@ const HomeContent = () => {
         className={styles.backgroundImage}
       />
       <div className={styles.container}>
-        <div >
+        <div>
+          <span>
+            
+          </span>
+        </div>
+        <div>
           <div className={styles.welcomeContainer}>
             <span className={styles.welcome}>Olá, meu nome é</span>
           </div>
-            <span className={styles.name}>Oséas Oliveira</span>
+          <span className={styles.name}>Oséas Oliveira</span>
         </div>
         <div className={styles.subtitle}>
-          <span>Frontend Developer.</span>
+          <span>Front-end Developer.</span>
         </div>
       </div>
     </div>

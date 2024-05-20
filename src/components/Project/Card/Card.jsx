@@ -67,13 +67,7 @@ const Card = () => {
             skills={["React.js", "CSS", "JavaScript", "OpenWeather API"]}
           />
 
-          <CardItem
-            to="https://github.com/OseOliv/Pokedex"
-            imgSrc={require("../../../assets/img/project/poke.png")}
-            title="Pokedex Pokemon"
-            description="Um modelo simples de Pokedex Pokémon, construído com a PokeAPI e estilizado apenas com CSS e JavaScript. Explore informações sobre seus Pokémon favoritos de forma intuitiva."
-            skills={["HTML", "CSS", "JavaScript", "PokeAPI"]}
-          />
+        
 
           {/* <CardItem
             to=""

@@ -45,12 +45,13 @@
 
 .welcomeContainer {
   display: flex;
+  margin-bottom: 0.8rem;
   align-self: baseline;
 }
 
 .welcome {
   font-family: "Share Tech Mono", monospace;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 100;
   color: rgb(178, 224, 224);
 }
@@ -83,7 +84,7 @@
   align-self: flex-end;
   font-family: "Share Tech Mono", monospace;
   font-size: 2.5rem;
-  margin-top: 1.2rem;
+  margin-top: 3rem;
   margin-left: auto;
 }
 
@@ -123,16 +124,41 @@
 }
 
 @media screen and (max-width: 530px) {
+  .welcomeContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
   .welcome {
+    font-size: 1.7rem;
     margin-top: 0rem;
+    margin-bottom: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
   .container {
-    padding: 0 7%;
+    padding: 0 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .name {
     font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
+
+  .name::after{
+    bottom: calc(var(--deco-height) * -1.25);
+  }
+
   .subtitle {
+    margin-top: 4rem;
     font-size: 2rem;
   }
 }

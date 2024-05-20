@@ -3,7 +3,7 @@ import styles from "./style.module.css";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
-import bgHome from '../../assets/img/others/dev.png'
+import bgHome from "../../assets/img/others/dev.png";
 
 import "react-toastify/dist/ReactToastify.css";
 
@@ -54,44 +54,48 @@ const ContactContent = () => {
 
   return (
     <>
-    <div className={styles.backgroundContainer}>
-      <div className={styles.overlay}></div>
-      <img src={bgHome} alt="background dev" className={styles.backgroundImage} />
-      <div className={styles.contactContainer}>
-        <div className={styles.contactTitle}>
-          <span>CONTATO</span>
+      <div className={styles.backgroundContainer}>
+        <div className={styles.overlay}></div>
+        <img
+          src={bgHome}
+          alt="background dev"
+          className={styles.backgroundImage}
+        />
+        <div className={styles.contactContainer}>
+          <form className={styles.formContact} onSubmit={sendEmail}>
+            <div className={styles.contactTitle}>
+              <span>CONTATO</span>
+            </div>
+            <input
+              className={styles.inputContact}
+              type="name"
+              placeholder="Digite seu nome"
+              onChange={(e) => setName(e.target.value)}
+              value={name}
+              required
+            />
+            <input
+              className={styles.inputContact}
+              type="email"
+              placeholder="Digite seu email"
+              onChange={(e) => setEmail(e.target.value)}
+              value={email}
+              required
+            />
+            <textarea
+              className={styles.textareaContact}
+              type="text"
+              placeholder="Digite sua mensagem"
+              onChange={(e) => setMessage(e.target.value)}
+              value={message}
+              required
+            />
+            <button className={styles.buttonContact} onClick={notify}>
+              ENVIAR
+            </button>
+            <ToastContainer />
+          </form>
         </div>
-        <form className={styles.formContact} onSubmit={sendEmail}>
-          <input
-            className={styles.inputContact}
-            type="name"
-            placeholder="Digite seu nome"
-            onChange={(e) => setName(e.target.value)}
-            value={name}
-            required
-          />
-          <input
-            className={styles.inputContact}
-            type="email"
-            placeholder="Digite seu email"
-            onChange={(e) => setEmail(e.target.value)}
-            value={email}
-            required
-          />
-          <textarea
-            className={styles.textareaContact}
-            type="text"
-            placeholder="Digite sua mensagem"
-            onChange={(e) => setMessage(e.target.value)}
-            value={message}
-            required
-          />
-          <button className={styles.buttonContact} onClick={notify}>
-            ENVIAR
-          </button>
-          <ToastContainer />
-        </form>
-      </div>
       </div>
     </>
   );
