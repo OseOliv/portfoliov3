@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./style.module.css";
 import bgHome from "../../assets/img/others/dev.png";
-import avatarperfil from "../../assets/img/others/avatarperfil.jpg";
+import avatarperfil from "../../assets/img/others/avatarperfil2.png";
 import oseolicv from "../../assets/img/others/OseOlivCurriculum.pdf";
 
 const AboutContent = () => {
@@ -63,7 +63,7 @@ const AboutContent = () => {
           <div className={styles.avatarContainer}>
             <img src={avatarperfil} alt="avatar" className={styles.avatar} />
             <Link className={styles.btnCvLink} to={oseolicv} target="_blank" rel="noreferrer">
-              <span className={styles.btnCv}>CURRICULUM</span>
+              <span className={styles.btnCv}>RESUME</span>
             </Link>
           </div>
         </div>

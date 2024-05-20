@@ -39,7 +39,7 @@
 
 .text {
   font-family: "Share Tech Mono", monospace;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: lightblue;
   margin-top: 0;
   margin-right: 5rem;
@@ -131,7 +131,7 @@
 
 .skillsContainer p {
   color: lightblue;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 
@@ -144,15 +144,15 @@
 }
 
 .skills span {
-  font-size: 0.95rem;
+  font-size: 0.8rem;
   padding: 0.4rem 0.3rem;
   background-color: transparent;
   border-radius: 5px;
 }
 
-.skillsSpan::before{
+.skillsSpan::before {
   content: "➤";
-  color:rgb(3, 233, 244) ;
+  color: rgb(3, 233, 244);
   display: inline-block;
   width: 1rem;
   height: 1rem;
@@ -165,7 +165,7 @@
   padding: 12.5px 30px;
   border: 0;
   border-radius: 100px;
-  background-color: rgb(3, 233, 244);
+  background-color: rgb(3, 233, 244, 0.8);
   color: rgb(138, 43, 226);
   font-weight: bold;
   transition: all 0.5s;
@@ -173,7 +173,7 @@
 }
 
 .skillsSpan:hover {
-  background-color: rgb(3, 233, 244);
+  background-color: rgb(3, 233, 244, 0.8);
   box-shadow: 0 0 20px rgb(3, 233, 244, 0.3);
   transform: scale(1.1);
 }
@@ -221,5 +221,8 @@
     display: flex;
     flex-direction: column;
   }
-}
 
+  .avatarContainer {
+    margin-top: 1rem;
+  }
+}
