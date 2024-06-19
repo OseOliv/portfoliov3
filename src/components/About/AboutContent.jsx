@@ -52,17 +52,18 @@ const AboutContent = () => {
                 <span className={styles.skillsSpan}>TypeScript</span>
                 <span className={styles.skillsSpan}>Node.js</span>
                 <span className={styles.skillsSpan}>React.js</span>
-                <span className={styles.skillsSpan}>React Native</span>
                 <span className={styles.skillsSpan}>SASS</span>
-                <span className={styles.skillsSpan}>styled-components</span>
-                <span className={styles.skillsSpan}>Axios</span>
-                <span className={styles.skillsSpan}>Tailwind</span>
               </div>
             </div>
           </p>
           <div className={styles.avatarContainer}>
             <img src={avatarperfil} alt="avatar" className={styles.avatar} />
-            <Link className={styles.btnCvLink} to={oseolicv} target="_blank" rel="noreferrer">
+            <Link
+              className={styles.btnCvLink}
+              to={oseolicv}
+              target="_blank"
+              rel="noreferrer"
+            >
               <span className={styles.btnCv}>CURRICULUM</span>
             </Link>
           </div>
