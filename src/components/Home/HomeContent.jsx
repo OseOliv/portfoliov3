@@ -25,7 +25,7 @@ const HomeContent = () => {
           <span className={styles.name}>Oséas Oliveira</span>
         </div>
         <div className={styles.subtitle}>
-          <span>Front-end Developer.</span>
+          <span>Developer.</span>
         </div>
       </div>
     </div>
