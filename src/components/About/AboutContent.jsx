@@ -60,7 +60,7 @@ const AboutContent = () => {
             <img src={avatarperfil} alt="avatar" className={styles.avatar} />
             <Link
               className={styles.btnCvLink}
-              to={oseolicv}
+              to=#
               target="_blank"
               rel="noreferrer"
             >
