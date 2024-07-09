@@ -22,7 +22,7 @@ const AboutContent = () => {
             <div className={styles.pageTitle}>
               <p>SOBRE MIM</p>
             </div>
-            Meu nome é Oseas Oliveira, sou um desenvolvedor front-end. Minha
+            Meu nome é Oseas Oliveira, sou um desenvolvedor. Minha
             abordagem se concentra na efetividade e na aplicação das melhores
             práticas na escrita de códigos, visando sempre proporcionar a melhor
             experiência aos usuários.
