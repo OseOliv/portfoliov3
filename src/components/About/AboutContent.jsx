@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import styles from "./style.module.css";
 import bgHome from "../../assets/img/others/dev.png";
 import avatarperfil from "../../assets/img/others/avatarperfil3.png";
-import oseolicv from "../../assets/img/others/OseOlivCurriculum.pdf";
+
 
 const AboutContent = () => {
   return (
