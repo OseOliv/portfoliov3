@@ -35,7 +35,7 @@ const AboutContent = () => {
             <br></br>
             Apesar de minha experiência de 12 anos na gastronomia, nunca deixei
             de acompanhar as novidades no desenvolvimento web. Hoje, mantenho-me
-            focado nos estudos das linguagens front-end e nas últimas
+            focado nos estudos das linguagens front-end e back-end (especialmente Python e Ruby) e nas últimas
             tecnologias, buscando aprimorar constantemente minhas habilidades.
             <br></br>
             <br></br>
