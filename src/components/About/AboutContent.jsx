@@ -53,6 +53,7 @@ const AboutContent = () => {
                 <span className={styles.skillsSpan}>Python</span>
                 <span className={styles.skillsSpan}>TypeScript</span>
                 <span className={styles.skillsSpan}>Node.js</span>
+                <span className={styles.skillsSpan}>React Native</span>
                 <span className={styles.skillsSpan}>React.js</span>
                 <span className={styles.skillsSpan}>Ruby on Rails</span>
                 <span className={styles.skillsSpan}>SQLite</span>
