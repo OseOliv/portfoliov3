@@ -42,7 +42,7 @@ const AboutContent = () => {
             <div className={styles.skillsContainer}>
               <p>
                 Linguagens, frameworks e bibliotecas com as quais tenho
-                experiência:
+                experiência(Conhecimento):
               </p>
               <br></br>
               <div className={styles.skills}>
