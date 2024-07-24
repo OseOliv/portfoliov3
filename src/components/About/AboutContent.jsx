@@ -49,10 +49,14 @@ const AboutContent = () => {
                 <span className={styles.skillsSpan}>HTML</span>
                 <span className={styles.skillsSpan}>CSS</span>
                 <span className={styles.skillsSpan}>JavaScript</span>
+                <span className={styles.skillsSpan}>Ruby</span>
+                <span className={styles.skillsSpan}>Python</span>
                 <span className={styles.skillsSpan}>TypeScript</span>
                 <span className={styles.skillsSpan}>Node.js</span>
                 <span className={styles.skillsSpan}>React.js</span>
-                <span className={styles.skillsSpan}>SASS</span>
+                <span className={styles.skillsSpan}>Ruby on Rails</span>
+                <span className={styles.skillsSpan}>SQLite</span>
+                <span className={styles.skillsSpan}>PostgreSQL</span>
               </div>
             </div>
           </p>
